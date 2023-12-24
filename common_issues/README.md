@@ -8,3 +8,11 @@ Your Dock will disappear for a second and then reappear but open apps will *not*
 killall Dock
 ```
 
+## Close all SSH sessions
+
+Killing all the SSH server processes
+
+```bash
+pkill -f ssh
+```
+
