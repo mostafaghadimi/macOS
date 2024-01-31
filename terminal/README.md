@@ -34,3 +34,11 @@ echo "autoload -Uz compinit; compinit" >> .zshrc
 ```
 
 and then `source ~/.zshrc`.
+
+## Add Pycharm to configurations
+
+Add the following path to PATH (`~/.zshrc`):
+
+```bash
+/Applications/PyCharm.app/Contents/MacOS
+```
