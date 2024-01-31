@@ -16,3 +16,12 @@ Killing all the SSH server processes
 pkill -f ssh
 ```
 
+## Disk Usage command
+
+The correspondig command `du -h --max-depth=1` in MacOS is the following:
+
+
+```bash
+du -h -d 1
+```
+
