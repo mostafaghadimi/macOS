@@ -1,5 +1,29 @@
 # Terminal
 
+## Keep more than 1000 records in history of ZSH
+
+Make sure that, there is no conflicting statements in `/etc/zshrc` and after that copy the following lines in `~/.zshrc`:
+
+
+```bash
+# History size
+export HISTSIZE=1000000000
+export SAVEHIST=100000000
+
+# History file location
+export HISTFILE=~/.zsh_history
+
+# Options
+setopt EXTENDED_HISTORY
+setopt INC_APPEND_HISTORY
+setopt SHARE_HISTORY
+setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_SPACE
+
+# Time format (if you need it)
+export HISTTIMEFORMAT="[%F %T] "
+```
+
 ## Sharing History between sessions in terminal
 
 Put the following line in `.zshrc`. [src](https://askubuntu.com/questions/23630/how-do-you-share-history-between-terminals-in-zsh)
