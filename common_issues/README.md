@@ -25,3 +25,15 @@ The correspondig command `du -h --max-depth=1` in MacOS is the following:
 du -h -d 1
 ```
 
+
+## chown bad substitution
+
+```bash
+sudo chown -R $USER:staff <directory_name>
+```
+
+[Why does echo “$USER:staff” throw zsh: bad substitution?](https://superuser.com/questions/1633756/why-does-echo-userstaff-throw-zsh-bad-substitution)
+
+```bash
+sudo chown -R $USER:"staff" <directory_name>
+```
