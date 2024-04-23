@@ -50,3 +50,8 @@ Upgrade the disk size or execute `docker system prune -f` command:
 Dashboard -> Settings -> Resources 
 ```
 
+Useful command:
+
+```bash
+docker system df
+```
