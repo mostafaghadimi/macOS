@@ -37,3 +37,16 @@ sudo chown -R $USER:staff <directory_name>
 ```bash
 sudo chown -R $USER:"staff" <directory_name>
 ```
+
+## Docker Disk Space 
+
+> E: You don't have enough free space in /var/cache/apt/archives/.
+
+**Solution**:
+
+Upgrade the disk size or execute `docker system prune -f` command:
+
+```bash
+Dashboard -> Settings -> Resources 
+```
+
