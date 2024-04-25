@@ -55,3 +55,9 @@ Useful command:
 ```bash
 docker system df
 ```
+
+## ModuleNotFoundError: No module named 'distutils'
+
+```bash
+pip install setuptools
+```
