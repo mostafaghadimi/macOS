@@ -1,5 +1,19 @@
 # Common Issues
 
+## Table of Contents
+
+- [Common Issues](#common-issues)
+  - [Table of Contents](#table-of-contents)
+  - [Command + Tab does not work consistently on MacOS](#command--tab-does-not-work-consistently-on-macos)
+  - [Close all SSH sessions](#close-all-ssh-sessions)
+  - [Disk Usage command](#disk-usage-command)
+  - [chown bad substitution](#chown-bad-substitution)
+  - [Docker Disk Space](#docker-disk-space)
+  - [ModuleNotFoundError: No module named 'distutils'](#modulenotfounderror-no-module-named-distutils)
+  - [Apple Devices](#apple-devices)
+    - [Sync Messages iPhone and Mac](#sync-messages-iphone-and-mac)
+    - [Activating Universal Clipboard (Copy and Paste between devices)](#activating-universal-clipboard-copy-and-paste-between-devices)
+
 ## Command + Tab does not work consistently on MacOS
 
 Your Dock will disappear for a second and then reappear but open apps will *not* be affected.
@@ -61,3 +75,21 @@ docker system df
 ```bash
 pip install setuptools
 ```
+
+## Apple Devices
+
+### Sync Messages iPhone and Mac
+
+> On your iPhone, go to **Settings > Messages**. Tap Text **Message Forwarding**.
+
+**Note**: If you don't see Text Message Forwarding, make sure you're signed in to iMessage using the same Apple ID on both your iPhone and your Mac.
+
+### Activating Universal Clipboard (Copy and Paste between devices)
+
+To activate Universal Clipboard, follow these simple steps:
+
+- Make sure your devices are signed into the **same iCloud** account and have both **Bluetooth** and **Wi-Fi** enabled.
+
+- On your Mac, go to System **Settings -> General** and select “Allow Handoff between this Mac and your iCloud devices.”
+
+- For iPhone and iPad, go to **Settings -> General** -> AirPlay & Handoff and enable Handoff.
