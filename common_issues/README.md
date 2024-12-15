@@ -13,6 +13,7 @@
   - [Apple Devices](#apple-devices)
     - [Sync Messages iPhone and Mac](#sync-messages-iphone-and-mac)
     - [Activating Universal Clipboard (Copy and Paste between devices)](#activating-universal-clipboard-copy-and-paste-between-devices)
+    - [Brew upgrade all packages](#brew-upgrade-all-packages)
 
 ## Command + Tab does not work consistently on MacOS
 
@@ -93,3 +94,11 @@ To activate Universal Clipboard, follow these simple steps:
 - On your Mac, go to System **Settings -> General** and select “Allow Handoff between this Mac and your iCloud devices.”
 
 - For iPhone and iPad, go to **Settings -> General** -> AirPlay & Handoff and enable Handoff.
+
+### Brew upgrade all packages
+
+In order to prevent that export this variable:
+
+```bash
+export HOMEBREW_NO_AUTO_UPDATE=1
+```
