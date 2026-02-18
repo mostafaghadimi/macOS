@@ -110,6 +110,5 @@ export HOMEBREW_NO_AUTO_UPDATE=1
 ### Proxy for agents
 
 ```bash
-cd /Applications/Warp.app/Contents/MacOS
-ALL_PROXY="your_proxy" ./stable
+ALL_PROXY="your-proxy" && cd /Applications/Warp.app/Contents/MacOS && ./stable &
 ```
