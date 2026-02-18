@@ -16,6 +16,8 @@
     - [Brew upgrade all packages](#brew-upgrade-all-packages)
   - [Warp Terminal](#warp-terminal)
     - [Proxy for agents](#proxy-for-agents)
+  - [Python Proxy](#python-proxy)
+    - [HTTPX and Requests](#httpx-and-requests)
 
 ## Command + Tab does not work consistently on MacOS
 
@@ -111,4 +113,14 @@ export HOMEBREW_NO_AUTO_UPDATE=1
 
 ```bash
 ALL_PROXY="your proxy" nohup /Applications/Warp.app/Contents/MacOS/stable &>/dev/null &
+```
+
+## Python Proxy
+
+### HTTPX and Requests
+
+Sometimes, you may need to unset the proxy for Python packages, while you didn't set the proxy in terminal. Packages like HTTPX and Requests will use the proxy settings from the environment variables, so you can unset them for Python by using the following command (or we can set trust_env to false in the code):
+
+```bash
+NO_PROXY=localhost,127.0.0.1 python <>
 ```
